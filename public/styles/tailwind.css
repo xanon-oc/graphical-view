@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  @apply bg-white;
+}
+
+.content {
+  @apply mx-auto w-[98%] xl:w-[90%] 2xl:w-[85%];
+}
+
+.content-full {
+  @apply mx-auto w-[98%] xl:w-[95%];
+}
+
+@layer utilities {
+  .btn-text {
+    @apply whitespace-nowrap inline-flex w-full items-center justify-center gap-2 rounded border border-transparent  transition-all focus:outline-none disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn {
+    @apply whitespace-nowrap inline-flex w-full items-center justify-center gap-2 rounded border border-transparent  transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  h2 {
+    @apply text-2xl font-extrabold lg:text-3xl;
+  }
+
+  h3 {
+    @apply text-xl font-semibold;
+  }
+
+  h4 {
+    @apply text-lg font-semibold lg:text-xl;
+  }
+
+  h5 {
+    @apply text-lg font-semibold;
+  }
+
+  h6 {
+    @apply text-base font-semibold;
+  }
+
+  p {
+    @apply text-gray-700;
+  }
+
+  .section_gap {
+    @apply py-16 lg:py-24;
+  }
+}
